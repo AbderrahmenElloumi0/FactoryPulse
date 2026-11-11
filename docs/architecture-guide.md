@@ -14,7 +14,7 @@ tech-stack rationale; `CONTEXT.md` defines the domain terms.
 | `spark/` | The Spark jobs: streaming and batch ingestion, anomaly scoring, lake queries, and the shared Spark and Delta settings. |
 | `dbt/` | The dbt project: four models, seeds and fixture assertions. |
 | `dags/` | The Airflow DAG file. |
-| `scripts/` | The driver scripts that run one compose service per step, and their shared job runner. |
+| `scripts/` | The driver scripts that run one compose service per step and their shared job runner, plus `release.sh` (publishes a release) and `import-contribution.sh` (imports an accepted pull request). |
 | `docker/` | One Dockerfile per image: Spark (with dbt as a build option), producer, quality, dashboard, Airflow. |
 | `tests/` | The pytest suite. |
 | `compose.yaml` | Every service of the platform. |
